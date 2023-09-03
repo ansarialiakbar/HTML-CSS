@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Properties</title>
+    <style>
+        .cont{
+          display: flex;
+          border: 2px solid black;
+         /* height: 100px; */
+         /* flex-direction: row-reverse;*/
+         /* flex-wrap: wrap; */
+         /*  justify-content: space-evenly;*/
+         /* justify-content: center;*/
+          /* align-items: flex-start; */
+           /*align-items: end;*/
+         /* align-content: flex-start;*/
+         /*  align-content: space-evenly;*/
+        
+         
+        }
+        .box{
+         height: 100px;
+         width: 500px; 
+        }
+        .box1{
+            background-color: brown;
+           /* order: 1;*/
+          /* flex-shrink: 2;*/
+          /* flex: 2;*/
+         
+        }
+        .box2{
+            background-color: blueviolet;
+           /* order: 1;*/
+          /* flex-grow: 2;*/
+          /* flex-shrink: 2;*/
+         align-self: flex-end;
+           
+        }
+        .box3{
+            background-color: chartreuse;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        
+    </div>
+</body>
+</html>

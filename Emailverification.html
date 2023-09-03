@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email verification</title>
+</head>
+<body>
+    <h1>Email Verification</h1>
+    <form >
+        <input type="email" placeholder="Enter email" id="text1"><br>
+        <input type="password" placeholder="Enter password" id="text2"><br>
+        <button onclick="validate()" value="login" >submit</button>
+    </form>
+    <script>
+        function validate(){
+            if(document.getElementById("text1").value == "Iert@123" && document.getElementById("text2").value == "12345")
+            {
+                alert("success");
+                // console.log("success");
+            }
+            else{
+                alert("failure");
+                // console.log("failure");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow & z-index</title>
+    <style>
+        p{
+            height: 250px;
+            width: 250px;
+            border: 2px solid red;
+           /* overflow: hidden; */
+           overflow: auto; 
+          /* overflow: scroll; */
+        
+        }
+        .box1{
+            height: 50px;
+            width: 50px;
+            background-color: white;
+            border: 2px solid red;
+            position: absolute;
+            top: 0;
+            z-index: -2;
+        }
+        .box2{
+            height: 50px;
+            width: 50px;
+            background-color: rgb(44, 11, 231);
+            position: absolute;
+            top: 0px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ratione vitae iure porro neque tempore sint perspiciatis velit! Odit omnis id blanditiis, veniam tempore alias in maiores? Officiis est quo natus voluptate pariatur dolorum accusamus illum saepe laudantium facilis, cumque a, beatae sapiente voluptates ipsum? Repellat velit nobis animi provident est facilis facere magnam corporis, voluptas itaque, mollitia dicta eum rem? Veritatis totam dignissimos laborum quaerat! Quam nihil dolores, possimus totam temporibus aut beatae vitae error saepe explicabo deleniti dolorum praesentium veniam assumenda ipsam voluptas doloribus distinctio magni accusantium incidunt in! Repellendus dolorum corporis aspernatur alias, quam deserunt vero. Rem?</p>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

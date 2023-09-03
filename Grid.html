@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+         .cont{
+            display: grid;
+           /* grid-template-columns: auto auto ; */
+          /* grid-template-columns: 1fr 1fr 1fr ;*/
+          /*  grid-template-columns: repeat(3, 1fr);*/
+           grid-template-columns: minmax(10px, 1fr) minmax(10px, 1fr) minmax(10px, 1fr);
+           grid-template-rows: 100px 100px 100px;
+          /* row-gap: 20px;*/;
+           justify-items: center;
+         /* align-items: center;*/
+          
+         }
+        .box{
+          /*  height: 100px;
+            width: 100px;*/
+            margin: 10px;
+        }
+        .box1{
+            background-color: blue;
+           /* border: 2px solid black;*/
+           /* align-self: end;*/ /* align itself in y axix*/
+          /* justify-self: end; /* it works on the x-axix */
+         /* grid-column-start: 1;
+          grid-column-end: 3;*/
+          grid-row-start: 1;
+          grid-row-end: 3;
+          
+        }
+        .box2{
+            background-color: red;
+            
+        }
+        .box3{
+            background-color: yellow;
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    </div>
+</body>
+</html>

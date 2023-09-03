@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Area</title>
+    <style>
+        .container{
+            display: grid;
+            gap: 10px;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer'
+            ;
+        }
+        .item{
+            background-color: aquamarine;
+            border: 2px solid black;
+            padding: 12px 5px;
+        }
+        #navbar{
+          grid-area: navbar;
+          text-align: center;
+        }
+        #section{
+            grid-area: section;
+            height: 500px;
+        }
+        #aside{
+            grid-area: aside;
+            height: 500px;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <!-- grid template area -->
+    <div class="container">
+        <div class="item" id="navbar">Hello</div>
+        <div class="item" id="section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quisquam?</div>
+        <div class="item" id="aside">Lorem ipsum dolor sit amet.</div>
+        <div class="item" id="footer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, nihil.</div>
+    </div>
+</body>
+</html>

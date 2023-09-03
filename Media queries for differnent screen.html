@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+   @media(max-width: 600px) {
+    /* phone */
+    body{
+        background-color: brown;
+    }
+    div::after{
+        content: "This is Mobile compatible";
+    }
+    
+   }
+   @media(min-width: 600px){
+    /*portrain table and big phones*/
+    body{
+        background-color: blue;
+    }
+    div::after{
+        content: "portrain table and big phones";
+    }
+
+   }
+   @media(min-width: 768px){
+    /* tablet */
+   
+     body{
+        background-color: aqua;
+     }
+     div::after{
+        content: "tablet ";
+    }
+    
+   }
+   @media (min-width: 992px){
+    /* Laptop */
+      body{
+        background-color: chartreuse;
+      }
+      div::after{
+        content: "Laptop";
+      }
+   }
+   @media(min-width: 1200px){
+    /* larger screen */ 
+      body{
+        background-color: aquamarine;
+      }
+      div::after{
+        content: "larger screen";
+      }
+   }
+
+   div{
+    text-align: center;
+    font-size: x-large;
+
+}
+   </style>
+       
+  
+</head>
+<body>
+    <div></div>
+    <p></p>
+    
+</body>
+</html>

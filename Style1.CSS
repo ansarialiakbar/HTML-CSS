@@ -1,0 +1,25 @@
+/* Descendent selector */
+/* main p {
+    color: crimson;
+} */
+/* Child selector */
+/* h1 > p  {
+    color: blueviolet;
+} */
+/* Adjacent Sibling */
+/* section + p {
+    color: blueviolet;
+} */
+
+/* Gentral Sibling Selector */
+/* section ~ p {
+    color: chartreuse;
+} */
+
+/* Attribute selector */
+/* [target="_blank"] {
+    color: brown;
+}
+[alt="used"] {
+    color: chocolate;
+} */
